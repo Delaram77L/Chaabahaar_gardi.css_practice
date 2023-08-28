@@ -19,7 +19,7 @@
 body{font-family: "Titr";
     direction: rtl;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.7;
     color: #383737;
     padding: 30px;}
@@ -35,7 +35,7 @@ body{font-family: "Titr";
         /* paragraphs */
 .paragraph{
     font-family: "Titr";
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
@@ -46,7 +46,7 @@ body{font-family: "Titr";
     font-size: 1.4rem;
     text-decoration: none;
     border-bottom: 1px solid #1a80ce;
-    padding: 5px;
+    padding: 3px;
     transition: all .3s;
 }
 
@@ -56,6 +56,7 @@ body{font-family: "Titr";
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     border-radius: 2px;
     transform: translateY(-5px);
+    padding: 5px;
 }
 
 
@@ -199,3 +200,43 @@ body{font-family: "Titr";
 }
 
 
+        /* composition photos */
+.composition{
+    position: relative;
+
+}
+
+.composition-photo{
+    width: 55%;
+    box-shadow: 0 1.5rem 2rem rgb(36, 36, 36, .4);
+    position: absolute;
+    transition: all .1s;
+    z-index: 10;
+    outline-offset: 1rem;
+}
+
+.composition-photo:hover{
+    z-index: 20;
+    transform: scale(1.06);
+    box-shadow: 0 2.5rem 2rem rgb(36, 36, 36, .5);
+    outline: 1.2rem solid #fe9f33;
+}
+
+.photo-1{
+    top: -2rem;
+    left: 0;
+}
+
+.photo-2{
+    top: 2rem;
+    right: 0;
+}
+
+.photo-3{
+    top: 10rem;
+    left: 20%;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+        /* 4 sections features */
