@@ -268,17 +268,17 @@ body{font-family: "Titr";
 
 .feature-box:hover{
     transform: translateY(-1.5rem) scale(1.03);
-    box-shadow: 0 3rem 4rem rgb(36, 36, 36, .4);
-    color: rgb(170, 101, 23);
+    box-shadow: 0 3rem 4rem rgba(36, 36, 36, .4);
+    color: #aa6517;
 }
 
 .feature-icon{
     margin-bottom: 3rem;
-    fill: rgb(75, 54, 8);
+    fill: #4b3608;
 }
 
 .feature-icon:hover{
-    fill: rgb(170, 101, 23);
+    fill: #aa6517;
 }
 
 
@@ -297,3 +297,79 @@ body{font-family: "Titr";
 /* ---------------------------------------------------------------------------------------------- */
         /* Recreation areas */
 /* ---------------------------------------------------------------------------------------------- */
+
+.section-areas{
+    background-color: #fffaea;
+    padding: 12rem 0 55rem 0;
+    margin-top: -15vh;
+}
+
+.area{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+}
+
+.area-side{
+    height: 40rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 .5rem;
+    color: #fff;
+    transition:all 1s ease;
+    font-size: 2rem;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 4px;
+    box-shadow: 0 1.5rem 2rem rgba(36, 36, 36, .3);
+}
+
+.area-side-front{
+    background-color: #fff;
+}
+
+.area-side-back{
+    transform: rotateY(180deg);
+}
+
+.area-side-back-1{
+    background-image: linear-gradient(to bottom right, #72c2ff, #1a80ce, #006cbe);
+}
+
+.area-side-back-2{
+    background-image: linear-gradient(to bottom right, #f9d224, #fe9f33, #f88502);
+}
+
+.area-side-back-3{
+    background-image: linear-gradient(to bottom right, #4eebb9, #00a572, #038f63);
+}
+
+.area:hover .area-side-front{
+    transform: rotateY(-180deg);
+}
+
+.area:hover .area-side-back{
+    transform: rotateY(0);
+}
+
+        /* area-picture */
+.area-picture{
+    background-size: cover;
+    height: 15rem;
+}
+
+.area-picture-1{
+    background-image: linear-gradient(to bottom right, rgba(114, 194, 255,.5), rgba(26, 128, 206,.5),
+     rgba(0, 108, 190,.5)), url(../../img/Lipar-Wetland.jpeg);
+}
+
+.area-picture-2{
+    background-image: linear-gradient(to bottom right, rgba(249, 210, 36,.5), rgba(254, 159, 51,.5),
+     rgba(248, 133, 2,.5)), url(../../img/nody-1626319880.jpg);
+}
+
+.area-picture-3{
+    background-image: linear-gradient(to bottom right, rgba(78, 235, 185,.5), rgba(0, 165, 114,.5),
+     rgba(3, 143, 99,.5)), url(../../img/cfc423ba6ee841bc87f645ea0df7c1a6-765x535.jpg);
+}
