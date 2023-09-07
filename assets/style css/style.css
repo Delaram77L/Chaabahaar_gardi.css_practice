@@ -286,11 +286,42 @@ body{font-family: "Titr";
 }
 
 
+        /* about-customs */
+.section-about-customs{
+    margin-top: -18vh;
+}
+
+.about-customs{
+    display: inline-block;
+    width: 70%;
+    background-color: #fff;
+    margin: 0 15rem;
+    padding: 2.5rem 4rem;
+    box-shadow: .5rem 1rem 2rem rgba(56, 55, 55,.1);
+    border-radius: 3px;
+    transform: skewX(-12deg);
+}
+
+.custom-figure{
+    width: 15rem;
+    height: 15rem;
+    float: right;
+    transform: translateX(2rem) skewX(12deg);
+    -webkit-shape-outside: circle(60% at 50% 50%);
+    shape-outside: circle(60% at 50% 50%);
+    -webkit-clip-path: circle(45% at 50% 50%);
+    clip-path: circle(45% at 50% 50%);
+}
+
+.custom-img{
+    height: 100%;
+    transform: translateX(4rem);
+}
 
 
-
-
-
+.custom-text{
+    transform: skewX(12deg);
+}
 
 
 
@@ -476,3 +507,4 @@ body{font-family: "Titr";
     background-image: linear-gradient(to bottom right, rgb(78, 235, 185), rgb(0, 165, 114),
     rgb(3, 143, 99)), url(../../img/موزه\ محلی1.jpg);
 }
+
