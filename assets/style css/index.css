@@ -37,7 +37,7 @@ body{font-family: "Titr";
         /* paragraphs */
 .paragraph{
     font-family: "Titr";
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 
@@ -286,42 +286,87 @@ body{font-family: "Titr";
 }
 
 
+/* --------------------------------------------------------------------------------------------------- */
         /* about-customs */
 .section-about-customs{
     margin-top: -18vh;
 }
 
 .about-customs{
+    position: relative;
     display: inline-block;
     width: 70%;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255,.5);
     margin: 0 15rem;
-    padding: 2.5rem 4rem;
+    padding: 2rem 3rem;
     box-shadow: .5rem 1rem 2rem rgba(56, 55, 55,.1);
     border-radius: 3px;
     transform: skewX(-12deg);
 }
 
+        /* img figure */
 .custom-figure{
     width: 15rem;
     height: 15rem;
     float: right;
     transform: translateX(2rem) skewX(12deg);
-    -webkit-shape-outside: circle(60% at 50% 50%);
-    shape-outside: circle(60% at 50% 50%);
+    -webkit-shape-outside: circle(65% at 50% 50%);
+    shape-outside: circle(65% at 50% 50%);
     -webkit-clip-path: circle(45% at 50% 50%);
     clip-path: circle(45% at 50% 50%);
 }
 
-.custom-img{
+.custom-img-1{
     height: 100%;
-    transform: translateX(4rem);
+    transform: translateX(4.2rem) scale(1.2);
+    transition: all .5s;
 }
 
+.custom-img-2{
+    height: 110%;
+    transform: translateX(8rem) translateY(-2rem) scale(1.2);
+    transition: all .5s;
+}
+
+.custom-img-3{
+    height: 100%;
+    transform: translateX(1.5rem) translateY(2rem) scale(1.2);
+    transition: all .5s;
+}
 
 .custom-text{
     transform: skewX(12deg);
 }
 
+.custom-img-caption{
+    font-size: 2.4rem;
+    font-family: "Cards";
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 60%;
+    left: 20%;
+    opacity: 0;
+    transition: all .5s;
+}
 
+.about-customs:hover .custom-img-caption{
+    top: 34%;
+    left: 20%;
+    opacity: 1;
+}
 
+.about-customs:hover .custom-img-1{
+    transform:translateX(4.2rem) scale(1);
+    filter: blur(3px) brightness(80%);
+}
+
+.about-customs:hover .custom-img-2{
+    transform: translateX(7rem) translateY(-2rem) scale(1);
+    filter: blur(3px) brightness(70%);
+}
+
+.about-customs:hover .custom-img-3{
+    transform: translateX(1.5rem) translateY(.8rem) scale(1);
+    filter: blur(3px) brightness(70%);
+}
