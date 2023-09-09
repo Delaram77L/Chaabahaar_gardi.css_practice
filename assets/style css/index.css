@@ -389,3 +389,28 @@ body{font-family: "Titr";
     transform: translateX(1.5rem) translateY(.8rem) scale(1);
     filter: blur(3px) brightness(70%);
 }
+
+/* ----------------------------------------------------------------------------------------------- */
+        /* section form */
+.section-form{
+    padding: 12rem;
+    background-image: linear-gradient(to right bottom, rgb(75, 54, 8), rgb(254, 159, 51));
+}
+
+.bg-form{
+    background-image:linear-gradient(75deg,transparent 50%,
+        rgba(255, 255, 255,.85) 0%,rgba(255, 255, 255,.85) 50%),
+        url(../../img/کوه-های-مریخی.jpg);
+    height: 45rem;
+    background-size: 100%;
+    border-radius: 4px;
+    box-shadow: 0 1.5rem 2rem rgba(56, 55, 55,.3);
+}
+
+.form{
+    width: 50%;
+    padding: 5rem;
+}
+.heading-form{
+
+}
