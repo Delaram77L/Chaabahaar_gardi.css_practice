@@ -289,25 +289,44 @@ body{font-family: "Titr";
 /* --------------------------------------------------------------------------------------------------- */
         /* about-customs */
 .section-about-customs{
-    margin-top: -18vh;
+    position: relative;
+    background-color: transparent;
+    top: 2rem;
+}
+
+        /* background video */
+.bg-video{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   opacity: .25;
+}
+
+.bg-video-content{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .about-customs{
     position: relative;
     display: inline-block;
     width: 70%;
-    background-color: rgba(255, 255, 255,.5);
+    background-color: rgba(255, 250, 234,.4);
     margin: 0 15rem;
-    padding: 2rem 3rem;
-    box-shadow: .5rem 1rem 2rem rgba(56, 55, 55,.1);
+    padding: 1.5rem 2.5rem;
+    box-shadow: .5rem 1rem 2rem rgba(56, 55, 55,.2);
     border-radius: 3px;
     transform: skewX(-12deg);
 }
 
         /* img figure */
 .custom-figure{
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
     float: right;
     transform: translateX(2rem) skewX(12deg);
     -webkit-shape-outside: circle(65% at 50% 50%);
