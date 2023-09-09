@@ -399,7 +399,7 @@ body{font-family: "Titr";
 
 .bg-form{
     background-image:linear-gradient(75deg,transparent 50%,
-        rgba(255, 255, 255,.85) 0%,rgba(255, 255, 255,.85) 50%),
+        rgba(255, 255, 255,.7) 0%,rgba(255, 255, 255,.7) 50%),
         url(../../img/کوه-های-مریخی.jpg);
     height: 45rem;
     background-size: 100%;
@@ -411,6 +411,44 @@ body{font-family: "Titr";
     width: 50%;
     padding: 5rem;
 }
-.heading-form{
 
+.form-group{
+    margin: 1rem 2rem;
+    font-family: "Titr";
+}
+
+.input{
+    padding: .6rem 1.5rem;
+    display: block;
+    width: 95%;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .9);
+    color: inherit;
+    border: none;
+    box-shadow: .5rem 1rem 1.5rem rgba(56, 55, 55,.1);
+}
+
+.input:focus{
+    border-bottom: 3px solid #1a80ce;
+    outline: none;
+    box-shadow: .5rem 1rem 1.5rem rgba(56, 55, 55,.2);
+}
+
+.input:focus:invalid{
+    border-bottom: 3px solid #fe9f33;
+}
+
+.lable{
+    margin-top: .4rem;
+    margin-right: 1.5rem;
+    font-size: 1.1rem;
+    display: block;
+    transition: all .3s;
+}
+
+.input:placeholder-shown + .lable{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2rem);
 }
