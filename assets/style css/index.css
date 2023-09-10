@@ -413,12 +413,12 @@ body{font-family: "Titr";
 }
 
 .form-group{
-    margin: 1rem 2rem;
+    margin: 1.2rem 2rem;
     font-family: "Titr";
 }
 
 .input{
-    padding: .6rem 1.5rem;
+    padding: .7rem 1.5rem;
     display: block;
     width: 95%;
     font-size: 1.3rem;
@@ -427,6 +427,7 @@ body{font-family: "Titr";
     color: inherit;
     border: none;
     box-shadow: .5rem 1rem 1.5rem rgba(56, 55, 55,.1);
+    transition: all .1s;
 }
 
 .input:focus{
@@ -451,4 +452,77 @@ body{font-family: "Titr";
     opacity: 0;
     visibility: hidden;
     transform: translateY(-2rem);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+        /* footer */
+.footer{
+    padding: 7rem 7rem 1rem 7rem;
+    background-color: #383737;
+}
+
+.footer-logo-box{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.footer-logo{
+    width: 15rem;
+    height: auto;
+}
+
+.footer-list{
+    list-style: none;
+    border-top: 1px solid #aa6517;
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+    background-color: #383737;
+    margin-right: 5rem;
+}
+
+.footer-item{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.footer-item:last-child{
+    margin-right: 2.8rem;
+}
+
+.footer-link{
+    color: #fffaea;
+}
+
+.footer-link:link{
+    display: inline-block;
+    transition: all .2s;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: #fe9f33;
+    transform: rotate(5deg) scale(1.1);
+}
+
+.copyright{
+    color: #fffaea;
+    font-size: 1.2rem;
+    display: inline-block;
+    border-top: 1px solid #aa6517;
+    width: 75%;
+    text-align: center;
+    margin-right:9rem;
+}
+
+.p-copyright{
+    margin-top: 1rem;
+}
+
+.footer-p-n{
+    font-size: 1.2rem;
+    color: #1a80ce;
+    text-align: center;
+    margin-top: 2rem;
 }
