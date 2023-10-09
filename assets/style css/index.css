@@ -69,6 +69,81 @@ body{font-family: "Titr";
 }
 
 /* ---------------------------------------------------------------------------------------- */
+        /* navigation */
+
+.navigation{
+
+}
+
+.nav-checkbox{
+
+}
+
+.nav-button{
+    background-color: #fffaea;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+    z-index: 2000;
+}
+
+.nav-background{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;    
+    position: fixed;
+    top: 6.5rem;
+    right: 6.5rem;
+    background-image: radial-gradient( rgb(247, 162, 65),rgb(70, 49, 5));
+    z-index: 1000;
+
+    transform: scale(40);
+}
+
+.nav-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1500;
+}
+
+.nav-list{
+    position: absolute;
+    top: 47%;
+    right: 32%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 1rem;
+}
+
+.nav-link:link, .nav-link:visited {
+    text-decoration: none;
+    color: #fffaea;
+    font-size: 1.8rem;
+    padding: .8rem 1.8rem;
+    font-family: "Text-bold";
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50% , rgba(255, 250, 234, .8) 50%);
+    background-size: 300%;
+    transition: all .7s;
+}
+
+.nav-link:hover, .nav-link:active{
+    background-position: 100%;
+    color: rgb(70, 49, 5);
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
 
         /* header  */
 .header{height: 92vh;
